@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#e9f2f6"/>
+  <rect x="0" y="0" width="400" height="185" fill="#dceaf1"/>
+  <rect x="0" y="185" width="400" height="115" fill="#cfe1ea"/>
+  <!-- headboard -->
+  <rect x="60" y="120" width="220" height="50" rx="10" fill="#0d2b3a"/>
+  <!-- bed base -->
+  <rect x="50" y="205" width="240" height="55" rx="10" fill="#1c7d8c"/>
+  <!-- duvet -->
+  <rect x="50" y="190" width="240" height="35" rx="12" fill="#f7fbfc"/>
+  <!-- pillows -->
+  <rect x="70" y="150" width="70" height="45" rx="14" fill="#c9a24b" opacity="0.9"/>
+  <rect x="150" y="150" width="70" height="45" rx="14" fill="#7a2a2a" opacity="0.85"/>
+  <!-- nightstands -->
+  <rect x="20" y="225" width="40" height="35" rx="4" fill="#0d2b3a"/>
+  <rect x="280" y="225" width="40" height="35" rx="4" fill="#0d2b3a"/>
+  <!-- lamps -->
+  <rect x="34" y="205" width="12" height="20" fill="#c9a24b"/>
+  <path d="M24 195 L52 195 L46 210 L30 210 Z" fill="#c9a24b"/>
+  <rect x="294" y="205" width="12" height="20" fill="#c9a24b"/>
+  <path d="M284 195 L312 195 L306 210 L290 210 Z" fill="#c9a24b"/>
+  <!-- window -->
+  <rect x="320" y="35" width="55" height="90" rx="2" fill="#0d2b3a"/>
+  <rect x="326" y="41" width="43" height="38" fill="#bcdce6"/>
+  <rect x="326" y="83" width="43" height="36" fill="#a9d1de"/>
+  <!-- rug -->
+  <ellipse cx="170" cy="272" rx="130" ry="13" fill="#1c7d8c" opacity="0.16"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#e9f2f6"/>
+  <rect x="0" y="0" width="400" height="150" fill="#dceaf1"/>
+  <rect x="0" y="150" width="400" height="150" fill="#cfe1ea"/>
+  <!-- upper cabinets -->
+  <rect x="20" y="35" width="360" height="60" rx="4" fill="#0d2b3a"/>
+  <rect x="30" y="45" width="60" height="40" rx="3" fill="#123a4d"/>
+  <rect x="100" y="45" width="60" height="40" rx="3" fill="#123a4d"/>
+  <rect x="240" y="45" width="60" height="40" rx="3" fill="#123a4d"/>
+  <rect x="310" y="45" width="60" height="40" rx="3" fill="#123a4d"/>
+  <!-- chimney/hood -->
+  <path d="M170 35 L230 35 L215 100 L185 100 Z" fill="#7a2a2a" opacity="0.85"/>
+  <!-- counter -->
+  <rect x="20" y="150" width="360" height="18" fill="#c9a24b"/>
+  <!-- lower cabinets -->
+  <rect x="20" y="168" width="360" height="90" rx="4" fill="#1c7d8c"/>
+  <rect x="40" y="185" width="70" height="55" rx="3" fill="#176570"/>
+  <rect x="130" y="185" width="70" height="55" rx="3" fill="#176570"/>
+  <rect x="290" y="185" width="70" height="55" rx="3" fill="#176570"/>
+  <!-- sink -->
+  <rect x="215" y="155" width="60" height="10" fill="#0d2b3a"/>
+  <ellipse cx="245" cy="200" rx="34" ry="18" fill="#e9f2f6"/>
+  <!-- stove dots -->
+  <circle cx="60" cy="160" r="0" fill="none"/>
+  <!-- floor -->
+  <rect x="0" y="258" width="400" height="42" fill="#b7d4e0" opacity="0.5"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#e9f2f6"/>
+  <rect x="0" y="0" width="400" height="185" fill="#dceaf1"/>
+  <rect x="0" y="185" width="400" height="115" fill="#cfe1ea"/>
+  <!-- arch mirror -->
+  <path d="M150 60 a50 50 0 0 1 100 0 L250 190 L150 190 Z" fill="#0d2b3a"/>
+  <path d="M158 62 a42 42 0 0 1 84 0 L242 184 L158 184 Z" fill="#bcdce6" opacity="0.7"/>
+  <!-- console table -->
+  <rect x="130" y="195" width="140" height="10" fill="#c9a24b"/>
+  <line x1="145" y1="205" x2="145" y2="245" stroke="#0d2b3a" stroke-width="4"/>
+  <line x1="255" y1="205" x2="255" y2="245" stroke="#0d2b3a" stroke-width="4"/>
+  <!-- vase -->
+  <path d="M195 165 C185 175 185 195 195 200 L205 200 C215 195 215 175 205 165 Z" fill="#7a2a2a"/>
+  <path d="M186 165 L214 165" stroke="#1c7d8c" stroke-width="3"/>
+  <path d="M188 145 Q195 120 200 165" stroke="#1c7d8c" stroke-width="2" fill="none"/>
+  <path d="M212 145 Q205 120 200 165" stroke="#1c7d8c" stroke-width="2" fill="none"/>
+  <!-- pendant -->
+  <line x1="200" y1="0" x2="200" y2="30" stroke="#0d2b3a" stroke-width="2"/>
+  <path d="M180 30 L220 30 L212 50 L188 50 Z" fill="#c9a24b"/>
+  <!-- floor pattern -->
+  <line x1="0" y1="230" x2="400" y2="230" stroke="#1c7d8c" stroke-width="1" opacity="0.25"/>
+  <line x1="0" y1="260" x2="400" y2="260" stroke="#1c7d8c" stroke-width="1" opacity="0.25"/>
+  <!-- side plants -->
+  <path d="M70 250 C55 225 55 195 75 185 C95 195 95 225 80 250 Z" fill="#1c7d8c"/>
+  <rect x="62" y="250" width="26" height="24" rx="3" fill="#0d2b3a"/>
+  <path d="M330 250 C315 225 315 195 335 185 C355 195 355 225 340 250 Z" fill="#1c7d8c"/>
+  <rect x="322" y="250" width="26" height="24" rx="3" fill="#0d2b3a"/>
+</svg>
