@@ -8,10 +8,14 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Space+Grotesk:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- playful trailing cursor (desktop only) -->
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
 <!-- ===== NAV ===== -->
 <header class="site-header" id="header">
@@ -28,7 +32,7 @@
       <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
       <a href="#projects">Projects</a>
-      <a href="#contact" class="nav-cta">Contact Us</a>
+      <a href="#contact" class="nav-cta hoverable">Contact Us</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -38,31 +42,56 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
+  <div class="hero-blob blob-1" aria-hidden="true"></div>
+  <div class="hero-blob blob-2" aria-hidden="true"></div>
+  <div class="hero-blob blob-3" aria-hidden="true"></div>
+
+  <div class="floaters" aria-hidden="true">
+    <svg class="floater f1" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#12a4a0"/></svg>
+    <svg class="floater f2" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#f0ad3d"/></svg>
+    <svg class="floater f3" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#ff6b4a"/></svg>
+    <svg class="floater f4" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#8c2f3a"/></svg>
+    <svg class="floater f5" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#12a4a0"/></svg>
+    <svg class="floater f6" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#f0ad3d"/></svg>
+    <svg class="floater f7" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#ff6b4a"/></svg>
+    <svg class="floater f8" viewBox="0 0 40 36"><polygon points="20,0 40,36 0,36" fill="#12a4a0"/></svg>
+  </div>
+
+  <div class="hero-inner">
+    <p class="eyebrow bounce-in">Premium Interior Design Studio <span class="wave">&#10024;</span></p>
+    <h1 class="bounce-in delay-1">Spaces that <span class="underline-word">feel<svg class="squiggle" viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2 14 Q 30 2, 55 12 T 110 10 T 165 12 T 198 8" fill="none" stroke="#ff6b4a" stroke-width="6" stroke-linecap="round"/></svg></span> as good<br>as they look.</h1>
+    <p class="hero-sub bounce-in delay-2">From concept to the final finish &mdash; Lorven Interio shapes homes and workspaces around how you actually live, with a bold, playful hand on every detail.</p>
+    <div class="hero-actions bounce-in delay-3">
+      <a href="#contact" class="btn btn-gold hoverable">Book a Consultation</a>
+      <a href="#gallery" class="btn btn-ghost hoverable">View Our Work</a>
+    </div>
+  </div>
+
   <div class="hero-peaks" aria-hidden="true">
     <svg viewBox="0 0 600 200" preserveAspectRatio="none">
       <path d="M0 200 L0 120 L100 30 L200 120 L250 70 L300 120 L400 20 L500 120 L600 60 L600 200 Z" fill="url(#peakGrad)"/>
       <defs>
         <linearGradient id="peakGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1c7d8c"/>
+          <stop offset="0%" stop-color="#12a4a0"/>
           <stop offset="100%" stop-color="#0d2b3a"/>
         </linearGradient>
       </defs>
     </svg>
-  </div>
-  <div class="hero-inner">
-    <p class="eyebrow">Premium Interior Design Studio</p>
-    <h1>Spaces that <em>feel</em> as good<br>as they look.</h1>
-    <p class="hero-sub">From concept to the final finish &mdash; Lorven Interio shapes homes and workspaces around how you actually live, with a calm, considered hand on every detail.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-gold">Book a Consultation</a>
-      <a href="#gallery" class="btn btn-ghost">View Our Work</a>
-    </div>
   </div>
   <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <!-- ===== MARQUEE : PRESTIGIOUS PROJECTS ===== -->
 <section class="marquee-band" aria-label="Prestigious projects">
+  <div class="spin-badge" aria-hidden="true">
+    <svg viewBox="0 0 120 120" class="spin-badge-text">
+      <defs><path id="badgeCircle" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+      <text font-size="11.5" letter-spacing="1.5" fill="#f0ad3d">
+        <textPath href="#badgeCircle">&#9670; TRUSTED STUDIO &#9670; SINCE DAY ONE &#9670; TRUSTED STUDIO &#9670; SINCE DAY ONE </textPath>
+      </text>
+    </svg>
+    <span class="spin-badge-mark">&#9651;</span>
+  </div>
   <div class="marquee-track">
     <div class="marquee-content">
       <span>Our Prestigious Projects</span>
@@ -113,26 +142,26 @@
       <p>Every project moves through the same disciplined arc: listen, sketch, refine, build. Nothing is rushed, and nothing is generic.</p>
       <div class="about-stats">
         <div class="stat">
-          <span class="stat-num">120+</span>
+          <span class="stat-num" data-target="120" data-suffix="+">0</span>
           <span class="stat-label">Spaces designed</span>
         </div>
         <div class="stat">
-          <span class="stat-num">15</span>
+          <span class="stat-num" data-target="15" data-suffix="">0</span>
           <span class="stat-label">Years of craft</span>
         </div>
         <div class="stat">
-          <span class="stat-num">98%</span>
+          <span class="stat-num" data-target="98" data-suffix="%">0</span>
           <span class="stat-label">Client satisfaction</span>
         </div>
       </div>
     </div>
-    <div class="about-mark" aria-hidden="true">
+    <div class="about-mark float-slow" aria-hidden="true">
       <svg viewBox="0 0 300 300">
-        <polygon points="150,40 210,150 90,150" fill="#1c7d8c"/>
-        <polygon points="90,150 150,260 30,260" fill="#1c7d8c"/>
-        <polygon points="210,150 270,260 150,260" fill="#1c7d8c"/>
-        <polygon points="120,150 150,205 180,150" fill="#e9f2f6"/>
-        <circle cx="150" cy="222" r="9" fill="#7a2a2a"/>
+        <polygon points="150,40 210,150 90,150" fill="#12a4a0"/>
+        <polygon points="90,150 150,260 30,260" fill="#12a4a0"/>
+        <polygon points="210,150 270,260 150,260" fill="#12a4a0"/>
+        <polygon points="120,150 150,205 180,150" fill="#fbfaf5"/>
+        <circle cx="150" cy="222" r="9" fill="#ff6b4a"/>
       </svg>
     </div>
   </div>
@@ -144,22 +173,22 @@
     <p class="eyebrow eyebrow-dark center">What We Do</p>
     <h2 class="center">Signature Services</h2>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card tilt-card hoverable" style="--accent:#12a4a0">
         <div class="service-icon">&#9651;</div>
         <h3>Residential Interiors</h3>
         <p>Full-home design from layout planning to soft furnishing, tailored to how your household lives.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card tilt-card hoverable" style="--accent:#f0ad3d">
         <div class="service-icon">&#9651;</div>
         <h3>Modular Kitchens</h3>
         <p>Efficient, elegant kitchen systems built around storage, workflow and finish quality.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card tilt-card hoverable" style="--accent:#ff6b4a">
         <div class="service-icon">&#9651;</div>
         <h3>Commercial Spaces</h3>
         <p>Offices and studios designed to support focus, hospitality and brand identity.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card tilt-card hoverable" style="--accent:#8c2f3a">
         <div class="service-icon">&#9651;</div>
         <h3>Turnkey Execution</h3>
         <p>One team, one timeline &mdash; civil work, carpentry, electricals and styling under a single roof.</p>
@@ -176,27 +205,33 @@
     <p class="section-lede center">A glimpse into spaces we have shaped &mdash; and the studio walkthroughs behind them.</p>
 
     <div class="gallery-grid" id="galleryGrid">
-      <figure class="gallery-item" data-caption="Living Room &mdash; Warm Contemporary">
+      <figure class="gallery-item hoverable rot-1" data-caption="Living Room &mdash; Warm Contemporary">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/living-room.svg" alt="Contemporary living room concept in teal and gold tones" loading="lazy">
         <figcaption>Living Room</figcaption>
       </figure>
-      <figure class="gallery-item" data-caption="Master Bedroom &mdash; Quiet Luxury">
+      <figure class="gallery-item hoverable rot-2" data-caption="Master Bedroom &mdash; Quiet Luxury">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/bedroom.svg" alt="Master bedroom concept with layered textiles" loading="lazy">
         <figcaption>Master Bedroom</figcaption>
       </figure>
-      <figure class="gallery-item" data-caption="Modular Kitchen &mdash; Efficient &amp; Elegant">
+      <figure class="gallery-item hoverable rot-3" data-caption="Modular Kitchen &mdash; Efficient &amp; Elegant">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/kitchen.svg" alt="Modular kitchen concept with teal cabinetry" loading="lazy">
         <figcaption>Modular Kitchen</figcaption>
       </figure>
-      <figure class="gallery-item" data-caption="Home Office &mdash; Focused Calm">
+      <figure class="gallery-item hoverable rot-4" data-caption="Home Office &mdash; Focused Calm">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/office.svg" alt="Home office concept with bookshelf and desk" loading="lazy">
         <figcaption>Home Office</figcaption>
       </figure>
-      <figure class="gallery-item" data-caption="Dining Room &mdash; Gathered Around Light">
+      <figure class="gallery-item hoverable rot-5" data-caption="Dining Room &mdash; Gathered Around Light">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/dining.svg" alt="Dining room concept with pendant lighting" loading="lazy">
         <figcaption>Dining Room</figcaption>
       </figure>
-      <figure class="gallery-item" data-caption="Foyer &mdash; The First Impression">
+      <figure class="gallery-item hoverable rot-6" data-caption="Foyer &mdash; The First Impression">
+        <span class="pin">&#128204;</span>
         <img src="assets/img/foyer.svg" alt="Luxury foyer concept with arch mirror" loading="lazy">
         <figcaption>Luxury Foyer</figcaption>
       </figure>
@@ -230,15 +265,15 @@
     <p class="eyebrow center">Delivered With Pride</p>
     <h2 class="center light">Trusted on Landmark Developments</h2>
     <div class="projects-row">
-      <div class="project-chip">
+      <div class="project-chip hoverable">
         <span class="chip-mark">&#9651;</span>
         <span>My Home</span>
       </div>
-      <div class="project-chip">
+      <div class="project-chip hoverable">
         <span class="chip-mark">&#9651;</span>
         <span>Aparna</span>
       </div>
-      <div class="project-chip">
+      <div class="project-chip hoverable">
         <span class="chip-mark">&#9651;</span>
         <span>MNK Construction</span>
       </div>
@@ -287,7 +322,7 @@
         <label for="message">Tell us about your space</label>
         <textarea id="message" name="message" rows="4" placeholder="BHK size, location, timeline..."></textarea>
       </div>
-      <button type="submit" class="btn btn-gold full-width">Send Enquiry</button>
+      <button type="submit" class="btn btn-gold full-width hoverable">Send Enquiry</button>
       <p class="form-note" id="formNote"></p>
     </form>
   </div>
